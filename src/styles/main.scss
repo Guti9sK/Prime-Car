@@ -37,7 +37,7 @@ body {
       justify-content: space-between;
       align-items: center;
       padding: $spacing-8 $spacing-48;
-      @include background-color(off-white, 9);
+      @include background-color(off-white, 6);
       & ul {
         display: flex;
         & a {
