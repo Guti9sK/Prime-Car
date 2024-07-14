@@ -1,0 +1,25 @@
+// Mixin para desenfoque básico
+@mixin blur($radius) {
+  filter: blur($radius);
+  -webkit-filter: blur($radius);
+}
+
+// Mixin para desenfoque con sombra
+@mixin shadow-blur($radius, $shadow) {
+  filter: blur($radius);
+  -webkit-filter: blur($radius);
+  box-shadow: $shadow;
+}
+
+// Mixin para desenfoque con opacidad
+@mixin blur-opacity($radius, $opacity) {
+  filter: blur($radius);
+  -webkit-filter: blur($radius);
+  opacity: $opacity;
+}
+
+// Mixin para desenfoque con saturación
+@mixin blur-saturation($radius, $saturation) {
+  filter: blur($radius) saturate($saturation);
+  -webkit-filter: blur($radius) saturate($saturation);
+}

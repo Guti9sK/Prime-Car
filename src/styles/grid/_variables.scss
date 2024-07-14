@@ -1,0 +1,208 @@
+// Variables para el sistema grid
+$grid-unit: 8;
+
+$mobile-margin: 0 0.5rem 0 0.5rem;
+$tablet-margin: 0 1.5rem 0 1.5rem;
+$desktop-margin: 0 3rem 0 3rem;
+
+$mobile-gutter: 0.5rem;
+$tablet-gutter: 1rem;
+$desktop-gutter: 1.5rem;
+
+
+// valores espaciados
+$spacing-1: 0.0625rem; // 1px
+$spacing-2: 0.125rem; // 2px
+$spacing-4: 0.25rem; // 4px
+$spacing-6: 0.375rem; // 6px
+$spacing-8: 0.5rem; // 8px
+$spacing-16: 1rem; // 16px
+$spacing-24: 1.5rem; // 24px
+$spacing-32: 2rem; // 32px
+$spacing-40: 2.5rem; // 40px
+$spacing-48: 3rem; // 48px
+$spacing-56: 3.5rem; // 56px
+$spacing-64: 4rem; // 64px
+$spacing-72: 4.5rem; // 72px
+$spacing-80: 5rem; // 80px
+$spacing-88: 5.5rem; // 88px
+$spacing-96: 6rem; // 96px
+$spacing-104: 6.5rem; // 104px
+$spacing-112: 7rem; // 112px
+$spacing-120: 7.5rem; // 120px
+$spacing-128: 8rem; // 128px
+$spacing-136: 8.5rem; // 136px
+$spacing-144: 9rem; // 144px
+$spacing-152: 9.5rem; // 152px
+$spacing-160: 10rem; // 160px
+$spacing-168: 10.5rem; // 168px
+$spacing-176: 11rem; // 176px
+$spacing-184: 11.5rem; // 184px
+$spacing-192: 12rem; // 192px
+$spacing-200: 12.5rem; // 200px
+$spacing-208: 13rem; // 208px
+$spacing-216: 13.5rem; // 216px
+$spacing-224: 14rem; // 224px
+$spacing-232: 14.5rem; // 232px
+$spacing-240: 15rem; // 240px
+$spacing-248: 15.5rem; // 248px
+$spacing-256: 16rem; // 256px
+$spacing-264: 16.5rem; // 264px
+$spacing-272: 17rem; // 272px
+$spacing-280: 17.5rem; // 280px
+$spacing-288: 18rem; // 288px
+$spacing-296: 18.5rem; // 296px
+$spacing-304: 19rem; // 304px
+$spacing-312: 19.5rem; // 312px
+$spacing-320: 20rem; // 320px
+$spacing-328: 20.5rem; // 328px
+$spacing-336: 21rem; // 336px
+$spacing-344: 21.5rem; // 344px
+$spacing-352: 22rem; // 352px
+$spacing-360: 22.5rem; // 360px
+$spacing-368: 23rem; // 368px
+$spacing-376: 23.5rem; // 376px
+$spacing-384: 24rem; // 384px
+$spacing-392: 24.5rem; // 392px
+$spacing-400: 25rem; // 400px
+$spacing-408: 25.5rem; // 408px
+$spacing-416: 26rem; // 416px
+$spacing-424: 26.5rem; // 424px
+$spacing-432: 27rem; // 432px
+$spacing-440: 27.5rem; // 440px
+$spacing-448: 28rem; // 448px
+$spacing-456: 28.5rem; // 456px
+$spacing-464: 29rem; // 464px
+$spacing-472: 29.5rem; // 472px
+$spacing-480: 30rem; // 480px
+$spacing-488: 30.5rem; // 488px
+$spacing-496: 31rem; // 496px
+$spacing-504: 31.5rem; // 504px
+$spacing-512: 32rem; // 512px
+$spacing-520: 32.5rem; // 520px
+$spacing-528: 33rem; // 528px
+$spacing-536: 33.5rem; // 536px
+$spacing-544: 34rem; // 544px
+$spacing-552: 34.5rem; // 552px
+$spacing-560: 35rem; // 560px
+$spacing-568: 35.5rem; // 568px
+$spacing-576: 36rem; // 576px
+$spacing-584: 36.5rem; // 584px
+$spacing-592: 37rem; // 592px
+$spacing-600: 37.5rem; // 600px
+$spacing-608: 38rem; // 608px
+$spacing-616: 38.5rem; // 616px
+$spacing-624: 39rem; // 624px
+$spacing-632: 39.5rem; // 632px
+$spacing-640: 40rem; // 640px
+$spacing-648: 40.5rem; // 648px
+$spacing-656: 41rem; // 656px
+$spacing-664: 41.5rem; // 664px
+$spacing-672: 42rem; // 672px
+$spacing-680: 42.5rem; // 680px
+$spacing-688: 43rem; // 688px
+$spacing-696: 43.5rem; // 696px
+$spacing-704: 44rem; // 704px
+$spacing-712: 44.5rem; // 712px
+$spacing-720: 45rem; // 720px
+$spacing-728: 45.5rem; // 728px
+$spacing-736: 46rem; // 736px
+$spacing-744: 46.5rem; // 744px
+$spacing-752: 47rem; // 752px
+$spacing-760: 47.5rem; // 760px
+$spacing-768: 48rem; // 768px
+$spacing-776: 48.5rem; // 776px
+$spacing-784: 49rem; // 784px
+$spacing-792: 49.5rem; // 792px
+$spacing-800: 50rem; // 800px
+$spacing-808: 50.5rem; // 808px
+$spacing-816: 51rem; // 816px
+$spacing-824: 51.5rem; // 824px
+$spacing-832: 52rem; // 832px
+$spacing-840: 52.5rem; // 840px
+$spacing-848: 53rem; // 848px
+$spacing-856: 53.5rem; // 856px
+$spacing-864: 54rem; // 864px
+$spacing-872: 54.5rem; // 872px
+$spacing-880: 55rem; // 880px
+$spacing-888: 55.5rem; // 888px
+$spacing-896: 56rem; // 896px
+$spacing-904: 56.5rem; // 904px
+$spacing-912: 57rem; // 912px
+$spacing-920: 57.5rem; // 920px
+$spacing-928: 58rem; // 928px
+$spacing-936: 58.5rem; // 936px
+$spacing-944: 59rem; // 944px
+$spacing-952: 59.5rem; // 952px
+$spacing-960: 60rem; // 960px
+$spacing-968: 60.5rem; // 968px
+$spacing-976: 61rem; // 976px
+$spacing-984: 61.5rem; // 984px
+$spacing-992: 62rem; // 992px
+$spacing-1000: 62.5rem; // 1000px
+$spacing-1008: 63rem; // 1008px
+$spacing-1016: 63.5rem; // 1016px
+$spacing-1024: 64rem; // 1024px
+$spacing-1032: 64.5rem; // 1032px
+$spacing-1040: 65rem; // 1040px
+$spacing-1048: 65.5rem; // 1048px
+$spacing-1056: 66rem; // 1056px
+$spacing-1064: 66.5rem; // 1064px
+$spacing-1072: 67rem; // 1072px
+$spacing-1080: 67.5rem; // 1080px
+$spacing-1088: 68rem; // 1088px
+$spacing-1096: 68.5rem; // 1096px
+$spacing-1104: 69rem; // 1104px
+$spacing-1112: 69.5rem; // 1112px
+$spacing-1120: 70rem; // 1120px
+$spacing-1128: 70.5rem; // 1128px
+$spacing-1136: 71rem; // 1136px
+$spacing-1144: 71.5rem; // 1144px
+$spacing-1152: 72rem; // 1152px
+$spacing-1160: 72.5rem; // 1160px
+$spacing-1168: 73rem; // 1168px
+$spacing-1176: 73.5rem; // 1176px
+$spacing-1184: 74rem; // 1184px
+$spacing-1192: 74.5rem; // 1192px
+$spacing-1200: 75rem; // 1200px
+$spacing-1208: 75.5rem; // 1208px
+$spacing-1216: 76rem; // 1216px
+$spacing-1224: 76.5rem; // 1224px
+$spacing-1232: 77rem; // 1232px
+$spacing-1240: 77.5rem; // 1240px
+$spacing-1248: 78rem; // 1248px
+$spacing-1256: 78.5rem; // 1256px
+$spacing-1264: 79rem; // 1264px
+$spacing-1272: 79.5rem; // 1272px
+$spacing-1280: 80rem; // 1280px
+$spacing-1288: 80.5rem; // 1288px
+$spacing-1296: 81rem; // 1296px
+$spacing-1304: 81.5rem; // 1304px
+$spacing-1312: 82rem; // 1312px
+$spacing-1320: 82.5rem; // 1320px
+$spacing-1328: 83rem; // 1328px
+$spacing-1336: 83.5rem; // 1336px
+
+// Breakpoints para diferentes dispositivos
+$mobile-portrait-small: 320px;
+$mobile-portrait-medium: 375px;
+$mobile-portrait-large: 414px;
+
+$tablet-small: 600px;
+$tablet-medium: 768px;
+$tablet-large: 1024px;
+
+$desktop-small: 1280px;
+$desktop-medium: 1440px;
+$desktop-large: 1920px;
+
+// columnas en diferentes dispositivos
+$columns-mobile-portrait-small: 4;
+$columns-mobile-portrait-medium: 6;
+$columns-mobile-portrait-large: 6;
+$columns-tablet-small: 6;
+$columns-tablet-medium: 8;
+$columns-tablet-large: 12;
+$columns-desktop-small: 12;
+$columns-desktop-medium: 12;
+$columns-desktop-large: 12;

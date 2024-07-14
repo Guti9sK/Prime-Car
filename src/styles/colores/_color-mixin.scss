@@ -1,0 +1,21 @@
+@use "./variables" as *;
+// Mixin to retrieve a color from the map
+@mixin color($color-name, $shade) {
+  color: map-get(map-get($colors, $color-name), $shade);
+}
+
+@mixin background-color($color-name, $shade) {
+  background-color: map-get(map-get($colors, $color-name), $shade);
+}
+
+@mixin brightness($percentage) {
+  filter: brightness($percentage);
+  -webkit-filter: brightness($percentage);
+}
+
+@mixin opacity($opacity) {
+  // Opacidad estándar para navegadores modernos
+  opacity: $opacity;
+  // Opacidad para Internet Explorer 8 y versiones anteriores
+  filter: alpha(opacity= #{$opacity * 100});
+}

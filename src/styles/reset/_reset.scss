@@ -1,0 +1,231 @@
+/* Elimina el espacio alrededor de todos los elementos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegura que la tipografía sea heredada y consistente */
+body,
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+/* Normaliza la apariencia de enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Elimina el estilo por defecto de listas */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* Normaliza tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  padding: 0;
+  text-align: left;
+}
+
+/* Asegura que las imágenes no se extiendan fuera de sus contenedores */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Normaliza la apariencia de botones y formularios */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Normaliza los campos de formulario */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* Normaliza los estilos de campo de formulario */
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  line-height: inherit;
+}
+
+/* Normaliza los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Normaliza el texto en bloque */
+p {
+  margin: 0;
+}
+
+/* Restablecer las propiedades básicas de los elementos */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Restablecer el estilo básico de audio, canvas, progress y video */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* Evitar la inserción de contenido de audio y video sin controles */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Estilos básicos para enlaces sin subrayado */
+a:focus {
+  outline: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Estilos básicos para el cursor de los elementos de control */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* Estilos básicos para los elementos */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* Estilos básicos para sub y sup */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+  &-thumb{
+    background: #2b2b2b;
+    border-radius: 10px;
+    border: .5px solid #fff;
+
+    &:hover {
+      background: #494949;
+    }
+  }
+
+  &-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+}

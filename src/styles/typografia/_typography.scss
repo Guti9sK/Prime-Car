@@ -1,0 +1,190 @@
+@use "../grid/mixins" as *;
+
+// Tamaños de fuente (rem)
+$size-8: 0.5rem; // 8px
+$size-10: 0.625rem; // 10px
+$size-12: 0.75rem; // 12px
+$size-14: 0.875rem; // 14px
+$size-16: 1rem; // 16px
+$size-18: 1.125rem; // 18px
+$size-20: 1.25rem; // 20px
+$size-24: 1.5rem; // 24px
+$size-32: 2rem; // 32px
+$size-40: 2.5rem; // 40px
+$size-48: 3rem; // 48px
+$size-56: 3.5rem; // 56px
+$size-64: 4rem; // 64px
+$size-72: 4.5rem; // 72px
+$size-80: 5rem; // 80px
+$size-88: 5.5rem; // 88px
+$size-96: 6rem; // 96px
+$size-104: 6.5rem; // 104px
+$size-112: 7rem; // 112px
+$size-120: 7.5rem; // 120px
+$size-128: 8rem; // 128px
+$size-136: 8.5rem; // 136px
+$size-144: 9rem; // 144px
+$size-152: 9.5rem; // 152px
+$size-160: 10rem; // 160px
+$size-168: 10.5rem; // 168px
+$size-176: 11rem; // 176px
+$size-184: 11.5rem; // 184px
+$size-192: 12rem; // 192px
+$size-200: 12.5rem; // 200px
+$size-208: 13rem; // 208px
+$size-216: 13.5rem; // 216px
+$size-224: 14rem; // 224px
+$size-232: 14.5rem; // 232px
+$size-240: 15rem; // 240px
+$size-248: 15.5rem; // 248px
+$size-256: 16rem; // 256px
+$size-264: 16.5rem; // 264px
+$size-272: 17rem; // 272px
+$size-280: 17.5rem; // 280px
+$size-288: 18rem; // 288px
+
+// Alturas de línea (rem)
+$line-height-16: 1rem; // 16px
+$line-height-20: 1.25rem; // 20px
+$line-height-24: 1.5rem; // 24px
+$line-height-28: 1.75rem; // 28px
+$line-height-32: 2rem; // 32px
+$line-height-40: 2.5rem; // 40px
+$line-height-48: 3rem; // 48px
+$line-height-56: 3.5rem; // 56px
+$line-height-64: 4rem; // 64px
+$line-height-72: 4.5rem; // 72px
+$line-height-80: 5rem; // 80px
+$line-height-88: 5.5rem; // 88px
+$line-height-96: 6rem; // 96px
+$line-height-104: 6.5rem; // 104px
+$line-height-112: 7rem; // 112px
+$line-height-120: 7.5rem; // 120px
+$line-height-128: 8rem; // 128px
+$line-height-136: 8.5rem; // 136px
+$line-height-144: 9rem; // 144px
+$line-height-152: 9.5rem; // 152px
+$line-height-160: 10rem; // 160px
+$line-height-168: 10.5rem; // 168px
+$line-height-176: 11rem; // 176px
+$line-height-184: 11.5rem; // 184px
+$line-height-192: 12rem; // 192px
+
+// Pesos de fuente
+$weight-thin: 100;
+$weight-extra-light: 200;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extra-bold: 800;
+$weight-black: 900;
+
+// Espaciado de letra (em)
+
+//  Valores negativos
+$letter-spacing-neg-4: -0.25em; // -4px
+$letter-spacing-neg-3: -0.1875em; // -3px
+$letter-spacing-neg-2: -0.125em; // -2px
+$letter-spacing-neg-1: -0.0625em; // -1px
+
+// Valor cero
+$letter-spacing-0: 0em; // 0px
+
+// Valores positivos
+$letter-spacing-1: 0.0625em; // 1px
+$letter-spacing-2: 0.125em; // 2px
+$letter-spacing-3: 0.1875em; // 3px
+$letter-spacing-4: 0.25em; // 4px
+$letter-spacing-5: 0.3125em; // 5px
+$letter-spacing-6: 0.375em; // 6px
+$letter-spacing-7: 0.4375em; // 7px
+$letter-spacing-8: 0.5em; // 8px
+$letter-spacing-9: 0.5625em; // 9px
+$letter-spacing-10: 0.625em; // 10px
+$letter-spacing-12: 0.75em; // 12px
+$letter-spacing-14: 0.875em; // 14px
+$letter-spacing-16: 1em; // 16px
+$letter-spacing-18: 1.125em; // 18px
+$letter-spacing-20: 1.25em; // 20px
+$letter-spacing-24: 1.5em; // 24px
+$letter-spacing-28: 1.75em; // 28px
+$letter-spacing-32: 2em; // 32px
+$letter-spacing-36: 2.25em; // 36px
+$letter-spacing-40: 2.5em; // 40px
+$letter-spacing-44: 2.75em; // 44px
+$letter-spacing-48: 3em; // 48px
+$letter-spacing-52: 3.25em; // 52px
+$letter-spacing-56: 3.5em; // 56px
+$letter-spacing-60: 3.75em; // 60px
+$letter-spacing-64: 4em; // 64px
+$letter-spacing-68: 4.25em; // 68px
+$letter-spacing-72: 4.5em; // 72px
+$letter-spacing-76: 4.75em; // 76px
+$letter-spacing-80: 5em; // 80px
+$letter-spacing-84: 5.25em; // 84px
+$letter-spacing-88: 5.5em; // 88px
+$letter-spacing-92: 5.75em; // 92px
+$letter-spacing-96: 6em; // 96px
+$letter-spacing-100: 6.25em; // 100px
+
+// Mixin para H1
+@mixin font-h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+}
+
+// Mixin para H2
+@mixin font-h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+// Mixin para H3
+@mixin font-h3 {
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+// Mixin para H4
+@mixin font-h4 {
+  font-size: clamp(1rem, 3.5vw, 2rem);
+}
+
+// Mixin para H5
+@mixin font-h5 {
+  font-size: clamp(0.875rem, 3vw, 1.75rem);
+}
+
+// Mixin para H6
+@mixin font-h6 {
+  font-size: clamp(0.75rem, 2.5vw, 1.5rem);
+}
+
+// Mixin para Párrafo Grande
+@mixin font-paragraph-large {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+// Mixin para Párrafo Mediano
+@mixin font-paragraph-medium {
+  font-size: clamp(0.875rem, 1.75vw, 1.125rem);
+}
+
+// Mixin para Párrafo Pequeño
+@mixin font-paragraph-small {
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+// Mixin para Etiqueta Grande
+@mixin font-label-large {
+  font-size: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+// Mixin para Etiqueta Mediana
+@mixin font-label-medium {
+  font-size: clamp(0.625rem, 1.25vw, 0.875rem);
+}
+
+// Mixin para Etiqueta Pequeña
+@mixin font-label-small {
+  font-size: clamp(0.5rem, 1vw, 0.75rem);
+}

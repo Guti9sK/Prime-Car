@@ -1,0 +1,27 @@
+@mixin backdrop-filter-blur($blur-value) {
+  backdrop-filter: blur($blur-value);
+  -webkit-backdrop-filter: blur(
+    $blur-value
+  ); // Para compatibilidad con navegadores WebKit
+}
+@mixin glass-1 {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+@mixin glass-2 {
+  background-color: rgba(15, 89, 158, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+@mixin glass-3 {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(0, 0, 0, 0.2)
+  );
+  background-size: 30px;
+}

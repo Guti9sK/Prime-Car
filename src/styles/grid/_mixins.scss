@@ -1,0 +1,147 @@
+@use "./variables" as *;
+
+// Mixin para media queries
+@mixin media-query($breakpoint) {
+  @if $breakpoint == mobile-portrait-small {
+    @media (max-width: #{$mobile-portrait-small}) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-portrait-medium {
+    @media (max-width: #{$mobile-portrait-medium}) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-portrait-large {
+    @media (max-width: #{$mobile-portrait-large}) {
+      @content;
+    }
+  } @else if $breakpoint == tablet-small {
+    @media (max-width: #{$tablet-small}) {
+      @content;
+    }
+  } @else if $breakpoint == tablet-medium {
+    @media (max-width: #{$tablet-medium}) {
+      @content;
+    }
+  } @else if $breakpoint == tablet-large {
+    @media (max-width: #{$tablet-large}) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-small {
+    @media (max-width: #{$desktop-small}) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-medium {
+    @media (max-width: #{$desktop-medium}) {
+      @content;
+    }
+  } @else if $breakpoint == desktop-large {
+    @media (max-width: #{$desktop-large}) {
+      @content;
+    }
+  }
+}
+
+// Mixin para media queries entre dos valores
+@mixin between($from, $to) {
+  @media (min-width: $from) and (max-width: $to) {
+    @content;
+  }
+}
+
+// Mixin para aplicar márgenes basados en la resolución
+@mixin responsive-margin {
+  margin: $mobile-margin;
+
+  @include respond-to(tablet-small) {
+    margin: $tablet-margin;
+  }
+
+  @include respond-to(desktop-small) {
+    margin: $desktop-margin;
+  }
+}
+
+// Mixin para aplicar gutters basados en la resolución
+@mixin responsive-gutter {
+  gap: $mobile-gutter;
+
+  @include respond-to(tablet-small) {
+    gap: $tablet-gutter;
+  }
+
+  @include respond-to(desktop-small) {
+    gap: $desktop-gutter;
+  }
+}
+
+@function apply-unit($value, $unit) {
+  @return $value * $unit;
+}
+
+// Mixin para aplicar padding
+@mixin padding($values...) {
+  $padding-values: ();
+
+  @each $value in $values {
+    // Si el valor es un número sin unidad, multiplícalo por $grid-unit
+    @if type-of($value) == "number" and unit($value) == "" {
+      $padding-values: append($padding-values, $value * $grid-unit);
+    } @else {
+      $padding-values: append($padding-values, $value);
+    }
+  }
+
+  padding: $padding-values;
+}
+
+@mixin margin($values...) {
+  $margin-values: ();
+
+  @each $value in $values {
+    // Si el valor es un número sin unidad, multiplícalo por $grid-unit
+    @if type-of($value) == "number" and unit($value) == "" {
+      $margin-values: append($margin-values, $value * $grid-unit);
+    } @else {
+      $margin-values: append($margin-values, $value);
+    }
+  }
+
+  margin: $margin-values;
+}
+// Mixin para columnas del grid
+@mixin grid-columns($columns) {
+  width: $columns * ($grid-unit * 2);
+}
+
+@mixin size($width: $spacing-1, $height: $spacing-1) {
+  width: $width;
+  height: $height;
+}
+
+@mixin border-radius(
+  $top-left,
+  $top-right: $top-left,
+  $bottom-right: $top-left,
+  $bottom-left: $top-right
+) {
+  border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+
+@mixin inset($top: null, $right: null, $bottom: null, $left: null) {
+  @if $top != null {
+    top: $top;
+  }
+  @if $right != null {
+    right: $right;
+  }
+  @if $bottom != null {
+    bottom: $bottom;
+  }
+  @if $left != null {
+    left: $left;
+  }
+}
+
+@mixin clamp($property, $min, $preferred, $max) {
+  #{$property}: clamp(#{$min}, #{$preferred}, #{$max});
+}
