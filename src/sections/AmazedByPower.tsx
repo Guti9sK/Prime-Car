@@ -1,3 +1,4 @@
+import VisionGT from '../assets/images/vision-gt.webp';
 const AmazedByPower = () => {
   return (
     <section className="amazed-power">
@@ -12,7 +13,7 @@ const AmazedByPower = () => {
         </p>
       </div>
       <div className="amazed-power_img">
-           <img src="/src/assets/images/vision-gt.jpg" alt="Bugatti-Vision-GT" />
+           <img src={VisionGT} alt="Bugatti-Vision-GT" />
       </div>
     </section>
   );

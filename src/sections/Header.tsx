@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import React, { useEffect } from "react";
-
+import Hero from '../assets/images/hero.webp';
 const Header : React.FC = () => {
   useEffect(() => {
     gsap.fromTo('.header_hero .content > *', {
@@ -51,7 +51,7 @@ const Header : React.FC = () => {
         <button>Contact Us</button>
       </nav>
       <div className="header_hero">
-        <img src="/src/assets/images/hero.jpg" alt="hero image" />
+        <img src={Hero} alt="hero image" />
         <div className="content">
           <h1>
             MORE ECONOMY, <br />
