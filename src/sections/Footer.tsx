@@ -1,3 +1,6 @@
+import Facebook from '../assets/images/logos--facebook.svg';
+import Instagram from '../assets/images/logos--instagram.svg';
+import Linkedin from '../assets/images/logos--linkedin.svg';
 
 const Footer = () => {
   return (
@@ -39,9 +42,9 @@ const Footer = () => {
             <li><a href="#">+111-111-1111</a></li>
           </ul>
           <div className="footer_links_call_social">
-             <div className="facebook"><img src="/src/assets/images/logos--facebook.svg" alt="facebook-icon" /></div>
-             <div className="linkedin"><img src="/src/assets/images/logos--linkedin.svg" alt="linkedin-icon" /></div>
-             <div className="instagram"><img src="/src/assets/images/logos--instagram.svg" alt="instagram-icon" /></div>
+             <div className="facebook"><img src={Facebook} /></div>
+             <div className="linkedin"><img src={Linkedin} alt="linkedin-icon" /></div>
+             <div className="instagram"><img src={Instagram} alt="instagram-icon" /></div>
           </div>
         </div>
        </div>
