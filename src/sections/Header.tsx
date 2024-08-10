@@ -51,7 +51,7 @@ const Header : React.FC = () => {
         <button>Contact Us</button>
       </nav>
       <div className="header_hero">
-        <img src="/images/hero.jpg" alt="hero image" />
+        <img src="/src/assets/images/hero.jpg" alt="hero image" />
         <div className="content">
           <h1>
             MORE ECONOMY, <br />

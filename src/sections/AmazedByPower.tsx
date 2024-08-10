@@ -12,7 +12,7 @@ const AmazedByPower = () => {
         </p>
       </div>
       <div className="amazed-power_img">
-           <img src="/images/vision-gt.jpg" alt="Bugatti-Vision-GT" />
+           <img src="/src/assets/images/vision-gt.jpg" alt="Bugatti-Vision-GT" />
       </div>
     </section>
   );

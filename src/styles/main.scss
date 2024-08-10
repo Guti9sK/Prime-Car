@@ -25,7 +25,7 @@ html.lenis body {
 body {
   @include size(100%, 100dvh);
   @include font-BebasNeue();
-  
+
   & .header {
     overflow: hidden;
     .has-submenu {
@@ -199,15 +199,15 @@ body {
   }
   & .benefits {
     position: relative;
-    @include size(100%, 100dvh);
+    @include size(100%, 100%);
     @include background-color(soft-black, 7);
     display: flex;
     flex-direction: column;
     gap: $spacing-88;
     padding: $spacing-32 $spacing-48;
-    overflow-x: hidden;
+    overflow: hidden;
     &_text {
-      @include size(100%, _);
+      @include size(100%, inherit);
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -243,16 +243,15 @@ body {
         padding: 0 $spacing-32 $spacing-32 $spacing-32;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
         &:hover img {
-          transform: scale(0.9) translateY(-40%);
+          transform: scale(0.8) translateY(-50%);
         }
 
         & img {
           position: absolute;
-          transform: translateY(-35%) scale(0.8);
+          transform: translateY(-45%) scale(0.7);
           z-index: 1;
           transition: 0.8s transform;
           filter: drop-shadow(0 0.8rem 1rem rgba(0, 0, 0, 0.6));
-          aspect-ratio: 262 / 261;
         }
 
         &_text {
@@ -287,6 +286,9 @@ body {
       }
       &_item-3 {
         background-color: rgba(0, 88, 221, 0.5);
+        & img {
+            width: 70%;
+        }
       }
     }
     &::before {
@@ -912,7 +914,7 @@ body {
 @include media-query(tablet-small) {
   body {
     & .header {
-        
+
       .has-submenu {
         position: relative;
         display: flex;
@@ -939,7 +941,7 @@ body {
         display: none;
         opacity: 0;
         z-index: 2;
-        transition: opacity 0.3s ease-in-out;
+        transition: opacity .5s ease-in-out;
       }
 
       .has-submenu ul a {
@@ -949,12 +951,7 @@ body {
         padding: 1rem;
         min-width: 7rem;
         border-radius: 0.5rem;
-      }
-
-      .has-submenu ul a::after {
-        content: url(icons/icon-arrow-right.svg);
-        height: 17px;
-        opacity: 0;
+        transition: .5s background-color, .5s padding;
       }
 
       .has-submenu ul a:hover {

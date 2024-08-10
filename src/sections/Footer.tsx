@@ -39,9 +39,9 @@ const Footer = () => {
             <li><a href="#">+111-111-1111</a></li>
           </ul>
           <div className="footer_links_call_social">
-             <div className="facebook"><img src="/images/logos--facebook.svg" alt="facebook-icon" /></div>
-             <div className="linkedin"><img src="/images/logos--linkedin.svg" alt="linkedin-icon" /></div>
-             <div className="instagram"><img src="/images/logos--instagram.svg" alt="instagram-icon" /></div>
+             <div className="facebook"><img src="/src/assets/images/logos--facebook.svg" alt="facebook-icon" /></div>
+             <div className="linkedin"><img src="/src/assets/images/logos--linkedin.svg" alt="linkedin-icon" /></div>
+             <div className="instagram"><img src="/src/assets/images/logos--instagram.svg" alt="instagram-icon" /></div>
           </div>
         </div>
        </div>
